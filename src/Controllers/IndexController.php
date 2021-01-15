@@ -53,11 +53,18 @@
                     $titlePost = $rows['title'];
                     $cont = $rows['cont'];
                     $date = $rows['create_date'];
+
+                    $_SESSION["myPost"] = false;
+
+                    if($_SESSION['userLogged'] == $rows['user']){
+                        $_SESSION["myPost"] = true;
+                    }
                 }
             }else{
                 $titlePost = null;
                 $cont = null;
                 $date = null;
+                $_SESSION["myPost"] = false;
             }
 
             $dataview=['title'=>'myPost', 'titlePost'=>$titlePost, 'cont' => $cont, 'date' => $date];

@@ -12,7 +12,7 @@
 <body>
 <header>
 
-    <h1 class="text-center list-group-item list-group-item-primary"><a href="/">BLOG Oscar</a></h1>
+    <h1 class="text-center list-group-item list-group-item-primary"><a href="<?= BASE ?>">BLOG Oscar</a></h1>
 
 </header>
 <nav class="justify-content-between navbar navbar-expand-lg navbar-light bg-light">

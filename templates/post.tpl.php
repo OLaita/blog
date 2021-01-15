@@ -3,14 +3,16 @@ $db=$this->getDB();
 
     if(isset($titlePost)){
         $mio = "";
-        if($_SESSION["myPost"] == true){
-            $mio = "<form class='position-absolute' action='".BASE."blog/actionPost' method='post'>
-                    <button class='btn' type='submit' name='ed[<?=1?>]' value='".$_SESSION['idPost']."''>
-                        <img src='".BASE."public/Imagenes/editar.svg' alt='Submit' width='48' height='48'>
-                    </button>
-                    <button class='btn' type='submit' name='del[<?=1?>]' value='".$_SESSION['idPost']."''>
-                        <img src='".BASE."public/Imagenes/basura.svg' alt='Submit' width='48' height='48'>
-                    </button></form>"; 
+        if(isset($_SESSION["myPost"])){
+            if($_SESSION["myPost"] == true){
+                $mio = "<form class='position-absolute' action='".BASE."blog/actionPost' method='post'>
+                        <button class='btn' type='submit' name='ed[<?=1?>]' value='".$_SESSION['idPost']."''>
+                            <img src='".BASE."public/Imagenes/editar.svg' alt='Submit' width='48' height='48'>
+                        </button>
+                        <button class='btn' type='submit' name='del[<?=1?>]' value='".$_SESSION['idPost']."''>
+                            <img src='".BASE."public/Imagenes/basura.svg' alt='Submit' width='48' height='48'>
+                        </button></form>"; 
+            }
         }
         echo '<div class="container p-3 my-3 border text-center w-100">
                 '.$mio.'

@@ -1,0 +1,21 @@
+{
+    "conf_dev":{
+        "driver":"mysql",
+        "dbhost":"127.0.0.1",
+        "dbname":"blog",
+        "dbuser":"root",
+        "dbpass":"oscar7",
+        "web":"/",
+        "root":"/"
+    },
+    "conf_pro":{
+        "driver":"mysql",
+        "dbhost":"laos.cesnuria.com",
+        "dbname":"LaOs_blog",
+        "dbuser":"LaOs_blog",
+        "dbpass":"oscar7",
+        "web":"/m7/blog/",
+        "root":"/m7/blog/"
+
+    }
+}

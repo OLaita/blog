@@ -31,7 +31,7 @@
     
     <?php
         if(isset($_SESSION['userLogged'])){
-            echo "<li class='list-group-item'><a href='".BASE."index/profile'>Cuenta</a></li>";
+            //echo "<li class='list-group-item'><a href='".BASE."index/profile'>Cuenta</a></li>";
             echo "<li class='list-group-item'><a href='".BASE."index/allPost'>Todos los Post</a></li>";
             echo "<li class='list-group-item'><a href='".BASE."index/newPost'><img src='".BASE."public/Imagenes/mas.svg' width='48' height='48' /></a></li>";
         }
